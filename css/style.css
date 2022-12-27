@@ -30,8 +30,10 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between  ;
+    width: 100%;
     height: 80px;
     padding: 20px;
+    position: fixed;
 }
 
 .main-nav ul{
@@ -71,11 +73,15 @@ ul{
     padding-left: 30px;
 }
 
+.kitkat-bg{
+    padding-top: 50px;
+}
+
 .showcase h1{
     font-size: 70px;
 }
 .showcase hr{
-    width: 45%;
+    width:100%;
     height: 5px;
     border: 0;
     background: #FFFF;
@@ -98,25 +104,42 @@ ul{
 .products h1{
     color: #e00a20;
     display: flex;
+    font-size: 40px;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .product-cards{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 60px;
 }
 
+.pcard-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.pcard-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+} 
+
 .product-cards img{
-    width: 40%;
+    width: 50%;
      
 }
 
 .product-cards h3{
     color: black;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .buybtn{
@@ -127,4 +150,75 @@ ul{
     padding: 5px 10px;
     background: #e00a20;
     color: #ffff;
+}
+
+.image-gallery{
+    background: #e00a20;
+    color: #FFFF;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.image-gallery img{
+    width: 100%;
+}
+
+.links{
+    background: #e00a20;
+    color: #FFFF;
+    font-size: 15px;
+    padding: 35px 0;
+    margin-bottom: 20px;
+}
+
+.links-inner{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.links-inner ul li a{
+    line-height: 2.5;
+    color: #FFFF;
+}
+
+.footer{
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+.footer-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer div{
+    display: flex;
+    align-items: center;
+}
+
+.footer .logo-nestle{
+    width: 50px;
+    margin-left: 30px;
+}
+
+.footer ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer li{
+    margin-right: 30px;
+}
+
+.footer a{
+    color: #262626;
 }
